@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 80px;
+    font-style: italic;
+    background-image: linear-gradient(to top, #280f14, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 10px black;
+
+}
+
+.calsi {
+    background-color: #280f14;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+
+}
+
+.calsi1 {
+    width: 30%;
+    background-color: wheat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 70vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(70px, auto) repeat(5, 70px);
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px whitesmoke;
+
+
+}
+
+.calsi1>button {
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    border: 1px solid #520b20;
+    outline: none;
+    background-color: #952c2c;
+}
+
+.calsi1>button:hover {
+    background-color: #120909;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.delete-all {
+    grid-column: span 2;
+}
+
+.result {
+    grid-column: 1 / -1;
+    background-color: #120909;
+    display: flex;
+    min-height: 15vh;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.result .previous-operand {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.result .current-operand {
+    border-radius: 2px;
+    color: aliceblue;
+    font-size: 2rem;
+}
